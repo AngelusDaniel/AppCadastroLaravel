@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  background-color: #e0e7ff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  color: #4338ca;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.btn-logout {
+  background-color: #ef4444;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
+.btn-logout:hover {
+  background-color: #dc2626;
+}
+
+
+/* Estilos para os botões do topo */
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-top {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Estilos para os cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* Estilos para o formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #4338ca;
+}
+
+/* Estilos para a lista de usuários */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  background-color: #f9fafb;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.user-item p {
+  margin: 4px 0;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .container {
+      padding: 10px;
+  }
+
+  .card-header,
+  .card-content {
+      padding: 15px;
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
+
